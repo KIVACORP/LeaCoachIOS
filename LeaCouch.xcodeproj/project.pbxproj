@@ -497,7 +497,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = UPC;
+				ORGANIZATIONNAME = KIVA;
 				TargetAttributes = {
 					7F29D50E21701F1D0092530F = {
 						CreatedOnToolsVersion = 10.0;
