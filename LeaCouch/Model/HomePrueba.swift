@@ -39,7 +39,4 @@ class HomePrueba {
         review_duration = 0
     }
     
-init(from jsonObject: JSON) {
-        <#statements#>
-    }
 }
