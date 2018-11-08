@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hTs-cZ-Vo4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hTs-cZ-Vo4">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -172,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbA-GU-lh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4166.666666666667" y="1847.5446428571427"/>
+            <point key="canvasLocation" x="4141" y="1843"/>
         </scene>
         <!--Search-->
         <scene sceneID="5vw-cb-2oF">
@@ -645,13 +645,13 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igj-F9-79N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3218.840579710145" y="1847.5446428571427"/>
+            <point key="canvasLocation" x="3268" y="1848"/>
         </scene>
-        <!--Profile-->
+        <!--Favorites-->
         <scene sceneID="2ok-GX-FJ8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hXX-VI-RmP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="profile-24" id="rOj-rP-7hW"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="favorites-24" id="rOj-rP-7hW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cic-Ot-NM4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -659,12 +659,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="sJM-J3-fKH" kind="relationship" relationship="rootViewController" id="NFg-Ji-Qvn"/>
+                        <segue destination="yWk-FB-w0X" kind="relationship" relationship="rootViewController" id="OtY-Dp-229"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zHj-50-Jui" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4167" y="1049"/>
+            <point key="canvasLocation" x="3268" y="1049"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xbO-Ju-F6a">
@@ -687,11 +687,11 @@
             </objects>
             <point key="canvasLocation" x="2590" y="86"/>
         </scene>
-        <!--Favorites-->
+        <!--Profile-->
         <scene sceneID="pkf-82-DB9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gzq-yi-arU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favorites" image="favorites-24" id="hyW-zG-Yml"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile-24" id="hyW-zG-Yml"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w0O-FM-tP4">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -699,12 +699,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="yWk-FB-w0X" kind="relationship" relationship="rootViewController" id="0dc-VY-OeG"/>
+                        <segue destination="sJM-J3-fKH" kind="relationship" relationship="rootViewController" id="icX-qh-xgO"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dct-MW-XR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3218.840579710145" y="1053.3482142857142"/>
+            <point key="canvasLocation" x="4139" y="1049"/>
         </scene>
     </scenes>
     <resources>
