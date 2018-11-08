@@ -16,6 +16,7 @@
 		7F29D53321701F200092530F /* LeaCouchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F29D53221701F200092530F /* LeaCouchUITests.swift */; };
 		7F29D54121703CA10092530F /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F29D54021703CA10092530F /* RegisterPageViewController.swift */; };
 		7F29D543217050550092530F /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F29D542217050550092530F /* LoginPageViewController.swift */; };
+		7FED3CCC219492DE00E19320 /* HomePrueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FED3CCB219492DE00E19320 /* HomePrueba.swift */; };
 		DF16733B21822ECF00FA1D96 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF16732C21822E8600FA1D96 /* AlamofireImage.framework */; };
 		DF16733C21822ECF00FA1D96 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF16732C21822E8600FA1D96 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DF16733F21822ED700FA1D96 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF16731221822E7E00FA1D96 /* SwiftyJSON.framework */; };
@@ -259,6 +260,7 @@
 		7F29D53421701F200092530F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F29D54021703CA10092530F /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		7F29D542217050550092530F /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		7FED3CCB219492DE00E19320 /* HomePrueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePrueba.swift; sourceTree = "<group>"; };
 		DF1672ED21822E7400FA1D96 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		DF16730621822E7E00FA1D96 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 		DF16731F21822E8600FA1D96 /* AlamofireImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AlamofireImage.xcodeproj; path = AlamofireImage/AlamofireImage.xcodeproj; sourceTree = "<group>"; };
@@ -419,6 +421,7 @@
 				E3F270D521944C650041ED6C /* Comment.swift */,
 				E3F270D721944C740041ED6C /* User.swift */,
 				E3F270D921944C880041ED6C /* Type.swift */,
+				7FED3CCB219492DE00E19320 /* HomePrueba.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -762,6 +765,7 @@
 				E3F270D821944C740041ED6C /* User.swift in Sources */,
 				E3896A6021819A8900E22752 /* NewApiTutor.swift in Sources */,
 				E3F270D021944C2B0041ED6C /* Career.swift in Sources */,
+				7FED3CCC219492DE00E19320 /* HomePrueba.swift in Sources */,
 				E3F270D221944C3A0041ED6C /* Course.swift in Sources */,
 				7F29D51521701F1D0092530F /* ViewController.swift in Sources */,
 				E3F270DC219453280041ED6C /* HomeViewController.swift in Sources */,

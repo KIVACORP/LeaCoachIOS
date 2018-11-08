@@ -9,10 +9,12 @@
 import Foundation
 
 class NewApiTutor{
-    static let baseUrl1 = "https://socket.tutorcruncher.com/9c79f14df986a1ec693c"
-    static let gamesUrl1 = baseUrl1 + "/contractors"
+    static let baseUrl1 = "https://socket.tutorcruncher.com"
+    static let keyUrl1 = "/9c79f14df986a1ec693c"
+    static let tutorUrl1 = baseUrl1 + "keyUrl1" + "/contractors"
+    
     //leacoach
-    static let baseUrl = "https://leacoachbe.somee.com/leacoach/v1"
+    static let baseUrl = "http://leacoachbe.somee.com/leacoach/v1"
     static let commentsUrl = baseUrl + "/comments"
     static let tutorsUrl = baseUrl + "/tutors"
     static let careersUrl = baseUrl + "/careers"

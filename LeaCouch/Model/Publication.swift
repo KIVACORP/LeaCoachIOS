@@ -44,11 +44,11 @@ class Publication {
         url = jsonObject["url"].stringValue
     }
     
-    static func buildAll(jsonPublications: [JSON]) -> [Publication] {
+    class func buildAll(jsonPublications: [JSON]) -> [Publication] {
         var publications: [Publication] = []
         let count = jsonPublications.count
         for i in 0 ..< count {
-            publications.append(Publication.init(from: jsonPublications[i]))
+        publications.append(Publication(from: JSON(jsonPublications[i])))
         }
         return publications
     }

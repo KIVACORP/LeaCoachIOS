@@ -40,17 +40,23 @@ class HomeViewController: UICollectionViewController {
     }
 
     func updateDataPublication() {
-        Alamofire.request(NewApiTutor.publicationsUrl)
+        Alamofire.request(NewApiTutor.publicationsUrl).validate()
             .responseJSON(completionHandler: {
                 response in
                 switch response.result {
                 case .success(let value):
                     let json = JSON(value)
-                    print("\(json)")
+                    let status = json["status"].stringValue
+                    if status == "error" {
+                        print("Tutor Api Error: \(json["message"].stringValue)")
+                        return
+                    }
+                    //print("\(json)")
                     let jsonPublications = json["publications"].arrayValue
                     self.publications = Publication.buildAll(jsonPublications: jsonPublications) // falta det
+                    self.collectionView!.reloadData()
                 case .failure(let error):
-                    print(error)
+                    print("Response Error: \(error.localizedDescription)")
                 }
             })
         
