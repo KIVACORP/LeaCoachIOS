@@ -25,6 +25,14 @@
 		E3896A6021819A8900E22752 /* NewApiTutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3896A5F21819A8900E22752 /* NewApiTutor.swift */; };
 		E3896A6221819EA000E22752 /* Tutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3896A6121819EA000E22752 /* Tutor.swift */; };
 		E3896A642181A79400E22752 /* TutorSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3896A632181A79400E22752 /* TutorSearchViewController.swift */; };
+		E3F270B821944C140041ED6C /* Publication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F270B721944C140041ED6C /* Publication.swift */; };
+		E3F270D021944C2B0041ED6C /* Career.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F270CF21944C2B0041ED6C /* Career.swift */; };
+		E3F270D221944C3A0041ED6C /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F270D121944C3A0041ED6C /* Course.swift */; };
+		E3F270D421944C4B0041ED6C /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F270D321944C4B0041ED6C /* Favorite.swift */; };
+		E3F270D621944C650041ED6C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F270D521944C650041ED6C /* Comment.swift */; };
+		E3F270D821944C740041ED6C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F270D721944C740041ED6C /* User.swift */; };
+		E3F270DA21944C880041ED6C /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F270D921944C880041ED6C /* Type.swift */; };
+		E3F270DC219453280041ED6C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F270DB219453280041ED6C /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -257,6 +265,14 @@
 		E3896A5F21819A8900E22752 /* NewApiTutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewApiTutor.swift; sourceTree = "<group>"; };
 		E3896A6121819EA000E22752 /* Tutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutor.swift; sourceTree = "<group>"; };
 		E3896A632181A79400E22752 /* TutorSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorSearchViewController.swift; sourceTree = "<group>"; };
+		E3F270B721944C140041ED6C /* Publication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publication.swift; sourceTree = "<group>"; };
+		E3F270CF21944C2B0041ED6C /* Career.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Career.swift; sourceTree = "<group>"; };
+		E3F270D121944C3A0041ED6C /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		E3F270D321944C4B0041ED6C /* Favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		E3F270D521944C650041ED6C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		E3F270D721944C740041ED6C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E3F270D921944C880041ED6C /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		E3F270DB219453280041ED6C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -396,6 +412,13 @@
 			isa = PBXGroup;
 			children = (
 				E3896A6121819EA000E22752 /* Tutor.swift */,
+				E3F270B721944C140041ED6C /* Publication.swift */,
+				E3F270CF21944C2B0041ED6C /* Career.swift */,
+				E3F270D121944C3A0041ED6C /* Course.swift */,
+				E3F270D321944C4B0041ED6C /* Favorite.swift */,
+				E3F270D521944C650041ED6C /* Comment.swift */,
+				E3F270D721944C740041ED6C /* User.swift */,
+				E3F270D921944C880041ED6C /* Type.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -425,6 +448,7 @@
 				7F29D54021703CA10092530F /* RegisterPageViewController.swift */,
 				7F29D542217050550092530F /* LoginPageViewController.swift */,
 				E3896A632181A79400E22752 /* TutorSearchViewController.swift */,
+				E3F270DB219453280041ED6C /* HomeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -735,12 +759,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3F270D821944C740041ED6C /* User.swift in Sources */,
 				E3896A6021819A8900E22752 /* NewApiTutor.swift in Sources */,
+				E3F270D021944C2B0041ED6C /* Career.swift in Sources */,
+				E3F270D221944C3A0041ED6C /* Course.swift in Sources */,
 				7F29D51521701F1D0092530F /* ViewController.swift in Sources */,
+				E3F270DC219453280041ED6C /* HomeViewController.swift in Sources */,
 				E3896A642181A79400E22752 /* TutorSearchViewController.swift in Sources */,
 				7F29D543217050550092530F /* LoginPageViewController.swift in Sources */,
+				E3F270D421944C4B0041ED6C /* Favorite.swift in Sources */,
+				E3F270D621944C650041ED6C /* Comment.swift in Sources */,
 				7F29D51321701F1D0092530F /* AppDelegate.swift in Sources */,
 				E3896A6221819EA000E22752 /* Tutor.swift in Sources */,
+				E3F270DA21944C880041ED6C /* Type.swift in Sources */,
+				E3F270B821944C140041ED6C /* Publication.swift in Sources */,
 				7F29D54121703CA10092530F /* RegisterPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
