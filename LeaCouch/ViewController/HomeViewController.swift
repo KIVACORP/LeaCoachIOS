@@ -20,7 +20,7 @@ class PublicationCell: UICollectionViewCell {
     @IBOutlet weak var datePublicationLabel: UILabel!
     @IBOutlet weak var namePublicationLabel: UILabel!
     
-    func updateValues(from publication: Publication) {
+    func updatePublicationsValues(from publication: Publication) {
         if let url = URL(string: publication.url) {
             publicationImage.af_setImage(withURL: url, placeholderImage: UIImage(named: "file-unavailable"))
         }
@@ -48,7 +48,7 @@ class HomeViewController: UICollectionViewController {
                     let json = JSON(value)
                     print("\(json)")
                     let jsonPublications = json["publications"].arrayValue
-                    self.publications = Publication.buildAll(from: jsonPublications) // falta det
+                    self.publications = Publication.buildAll(jsonPublications: jsonPublications) // falta det
                 case .failure(let error):
                     print(error)
                 }
@@ -71,7 +71,7 @@ class HomeViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PublicationCell
     
         // Configure the cell
-        cell.updateView(from: publications[indexPath.row])
+        cell.updatePublicationsValues(from: publications[indexPath.row])
         return cell
     }
 

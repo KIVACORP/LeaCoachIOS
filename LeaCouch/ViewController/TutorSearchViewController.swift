@@ -20,13 +20,7 @@ class TutorCell: UICollectionViewCell {
     @IBOutlet weak var reviewRatingTutorLabel: UILabel!
     
     func updateView(from tutor: Tutor) {
-        nameTutorLabel.text = tutor.country
-        townTutorLabel.text = tutor.name
-        countryTutorLabel.text = tutor.country
-        reviewRatingTutorLabel.text = String(tutor.name)
-        if !tutor.photo.isEmpty {
-            pictureTutorImageView.af_setImage(withURL: URL(string: tutor.photo)!, placeholderImage: UIImage(named: "no-image-available"))
-        }
+        
     }
 }
 
@@ -47,27 +41,7 @@ class TutorSearchViewController: UICollectionViewController {
     }
     
     func updateDataTutor() {
-        Alamofire.request(NewApiTutor.gamesUrl)
-        .validate()
-        .responseJSON(completionHandler: {response in
-            switch (response.result){
-            case .success(let value):
-                let json = JSON(value)
-                let status = json["status"].stringValue
-                if status == "error"{
-                    let message = json["message"]
-                    print("Response error: \(message)")
-                    return
-                }
-                let jsonTutors = json["results"].arrayValue
-                self.results = Tutor.buildAll(from: jsonTutors)
-                print("Tutors Found: \(self.results.count)")
-                self.collectionView?.reloadData()
-            case .failure(let error):
-                print("Error: \(error.localizedDescription)")
-                
-            }
-        })
+        
     }
 
     /*
