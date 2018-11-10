@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F122B48219643FA005399E6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F122B47219643FA005399E6 /* SearchViewController.swift */; };
+		7F122B632196460B005399E6 /* searchPublicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F122B612196460B005399E6 /* searchPublicationViewController.swift */; };
+		7F122B642196460B005399E6 /* searchPublicationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F122B622196460B005399E6 /* searchPublicationViewController.xib */; };
+		7F122B6721964670005399E6 /* searchTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F122B6521964670005399E6 /* searchTutorViewController.swift */; };
+		7F122B6821964670005399E6 /* searchTutorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F122B6621964670005399E6 /* searchTutorViewController.xib */; };
+		7F122B6B21964B7E005399E6 /* ViewControllervfg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F122B6921964B7E005399E6 /* ViewControllervfg.swift */; };
+		7F122B6C21964B7E005399E6 /* ViewControllervfg.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F122B6A21964B7E005399E6 /* ViewControllervfg.xib */; };
 		7F29D51321701F1D0092530F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F29D51221701F1D0092530F /* AppDelegate.swift */; };
 		7F29D51521701F1D0092530F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F29D51421701F1D0092530F /* ViewController.swift */; };
 		7F29D51821701F1D0092530F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F29D51621701F1D0092530F /* Main.storyboard */; };
@@ -245,6 +252,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7F122B47219643FA005399E6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		7F122B612196460B005399E6 /* searchPublicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchPublicationViewController.swift; sourceTree = "<group>"; };
+		7F122B622196460B005399E6 /* searchPublicationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = searchPublicationViewController.xib; sourceTree = "<group>"; };
+		7F122B6521964670005399E6 /* searchTutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchTutorViewController.swift; sourceTree = "<group>"; };
+		7F122B6621964670005399E6 /* searchTutorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = searchTutorViewController.xib; sourceTree = "<group>"; };
+		7F122B6921964B7E005399E6 /* ViewControllervfg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllervfg.swift; sourceTree = "<group>"; };
+		7F122B6A21964B7E005399E6 /* ViewControllervfg.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllervfg.xib; sourceTree = "<group>"; };
 		7F29D50F21701F1D0092530F /* LeaCouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaCouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F29D51221701F1D0092530F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F29D51421701F1D0092530F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -452,6 +466,13 @@
 				7F29D542217050550092530F /* LoginPageViewController.swift */,
 				E3896A632181A79400E22752 /* TutorSearchViewController.swift */,
 				E3F270DB219453280041ED6C /* HomeViewController.swift */,
+				7F122B47219643FA005399E6 /* SearchViewController.swift */,
+				7F122B612196460B005399E6 /* searchPublicationViewController.swift */,
+				7F122B622196460B005399E6 /* searchPublicationViewController.xib */,
+				7F122B6521964670005399E6 /* searchTutorViewController.swift */,
+				7F122B6621964670005399E6 /* searchTutorViewController.xib */,
+				7F122B6921964B7E005399E6 /* ViewControllervfg.swift */,
+				7F122B6A21964B7E005399E6 /* ViewControllervfg.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -738,6 +759,9 @@
 				7F29D51D21701F200092530F /* LaunchScreen.storyboard in Resources */,
 				7F29D51A21701F200092530F /* Assets.xcassets in Resources */,
 				7F29D51821701F1D0092530F /* Main.storyboard in Resources */,
+				7F122B6821964670005399E6 /* searchTutorViewController.xib in Resources */,
+				7F122B6C21964B7E005399E6 /* ViewControllervfg.xib in Resources */,
+				7F122B642196460B005399E6 /* searchPublicationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -765,16 +789,20 @@
 				E3F270D821944C740041ED6C /* User.swift in Sources */,
 				E3896A6021819A8900E22752 /* NewApiTutor.swift in Sources */,
 				E3F270D021944C2B0041ED6C /* Career.swift in Sources */,
+				7F122B48219643FA005399E6 /* SearchViewController.swift in Sources */,
 				7FED3CCC219492DE00E19320 /* HomePrueba.swift in Sources */,
 				E3F270D221944C3A0041ED6C /* Course.swift in Sources */,
+				7F122B6721964670005399E6 /* searchTutorViewController.swift in Sources */,
 				7F29D51521701F1D0092530F /* ViewController.swift in Sources */,
 				E3F270DC219453280041ED6C /* HomeViewController.swift in Sources */,
 				E3896A642181A79400E22752 /* TutorSearchViewController.swift in Sources */,
 				7F29D543217050550092530F /* LoginPageViewController.swift in Sources */,
 				E3F270D421944C4B0041ED6C /* Favorite.swift in Sources */,
+				7F122B6B21964B7E005399E6 /* ViewControllervfg.swift in Sources */,
 				E3F270D621944C650041ED6C /* Comment.swift in Sources */,
 				7F29D51321701F1D0092530F /* AppDelegate.swift in Sources */,
 				E3896A6221819EA000E22752 /* Tutor.swift in Sources */,
+				7F122B632196460B005399E6 /* searchPublicationViewController.swift in Sources */,
 				E3F270DA21944C880041ED6C /* Type.swift in Sources */,
 				E3F270B821944C140041ED6C /* Publication.swift in Sources */,
 				7F29D54121703CA10092530F /* RegisterPageViewController.swift in Sources */,
