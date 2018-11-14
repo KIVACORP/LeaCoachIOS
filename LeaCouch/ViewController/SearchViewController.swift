@@ -13,23 +13,26 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var viewContainer: UITableView!
     var searchViews: [UITableView]!
     
+    @IBOutlet weak var publicationCellView: UITableViewCell!
+    //@IBOutlet weak var tutorCellView: UITableViewCell!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        searchViews = [UITableView]()
-        searchViews.append(searchTutorViewController().view as! UITableView)
-        searchViews.append(searchPublicationViewController().view as! UITableView)
+        //searchViews = [UITableView]()
+        //searchViews.append(searchTutorViewController().view as! UITableView)
+        //searchViews.append(searchPublicationViewController().view as! UITableView)
         
         for v in searchViews {
             viewContainer.addSubview(v)
         }
-        viewContainer.bringSubviewToFront(searchViews[0])
+        //viewContainer.bringSubviewToFront(searchViews[0])
     }
     
     @IBAction func switchViewAction(_ sender: UISegmentedControl) {
-        self.viewContainer.bringSubviewToFront(searchViews[sender.selectedSegmentIndex])
+        //self.viewContainer.bringSubviewToFront(searchViews[sender.selectedSegmentIndex])
         //os_log("%@", sender.selectedSegmentIndex)
         //print("hola")
+        
     }
     
 }
