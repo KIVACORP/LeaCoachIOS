@@ -21,10 +21,10 @@ class SearchViewController: UIViewController {
         //searchViews = [UITableView]()
         //searchViews.append(searchTutorViewController().view as! UITableView)
         //searchViews.append(searchPublicationViewController().view as! UITableView)
-        
+        /*
         for v in searchViews {
             viewContainer.addSubview(v)
-        }
+        }*/
         //viewContainer.bringSubviewToFront(searchViews[0])
     }
     
