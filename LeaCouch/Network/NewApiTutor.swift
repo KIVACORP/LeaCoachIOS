@@ -14,7 +14,7 @@ class NewApiTutor{
     static let tutorUrl1 = baseUrl1 + "keyUrl1" + "/contractors"
     
     //leacoach
-    static let baseUrl = "http://leacoachbe.somee.com/leacoach/v1"
+    static let baseUrl = "http://leacoach.gear.host/leacoach/v1"
     static let commentsUrl = baseUrl + "/comments"
     static let tutorsUrl = baseUrl + "/tutors"
     static let careersUrl = baseUrl + "/careers"

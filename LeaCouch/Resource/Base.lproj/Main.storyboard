@@ -754,22 +754,23 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.6145762575" blue="0.14063266190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="UxZ-dI-Sxt"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TVV-Vx-oa7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2850.7246376811595" y="2526.2276785714284"/>
         </scene>
-        <!--View Controller-->
+        <!--Search Coach View Controller-->
         <scene sceneID="szy-Kx-jb8">
             <objects>
-                <viewController id="5Or-P8-gaK" sceneMemberID="viewController">
+                <viewController id="5Or-P8-gaK" customClass="SearchCoachViewController" customModule="LeaCouch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pp6-j5-q9I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="695"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sNn-Ps-nVa">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="643"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="695"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <searchBar key="tableHeaderView" contentMode="redraw" id="bCF-Y0-fXa">
@@ -778,14 +779,14 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="114" id="Lin-7N-I0p">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="114" id="Lin-7N-I0p" customClass="CoachTableViewCell" customModule="LeaCouch" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="84" width="414" height="114"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lin-7N-I0p" id="euH-Vg-wkG">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="113.66666666666667"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pw4-lH-oBB">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pw4-lH-oBB">
                                                     <rect key="frame" x="10" y="8" width="79" height="96"/>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vaX-2E-ZgD">
@@ -844,12 +845,28 @@
                                                 <constraint firstAttribute="trailing" secondItem="vaX-2E-ZgD" secondAttribute="trailing" constant="97" id="yzJ-SB-U6s"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="coachImage" destination="Pw4-lH-oBB" id="Jy6-2Y-UnN"/>
+                                            <outlet property="correoCoachLabel" destination="cCU-mP-okQ" id="XzY-tG-eWP"/>
+                                            <outlet property="especialityCoachLabel" destination="Ars-VK-zFC" id="QJg-eM-q3Q"/>
+                                            <outlet property="itemsCoachLabel" destination="gAv-OE-CY5" id="oSo-8V-6yt"/>
+                                            <outlet property="nameCoachLabel" destination="xUl-ZK-vyd" id="oog-1N-fMy"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="5Or-P8-gaK" id="VB5-Lb-KlA"/>
+                                    <outlet property="delegate" destination="5Or-P8-gaK" id="lIp-zZ-mIv"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.28085959999999999" green="0.207856655" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="woh-zu-o8W"/>
                     </view>
+                    <connections>
+                        <outlet property="coachSearchBar" destination="bCF-Y0-fXa" id="6zw-mj-11o"/>
+                        <outlet property="coachTable" destination="sNn-Ps-nVa" id="sgU-X4-Tev"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBv-pz-VaQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

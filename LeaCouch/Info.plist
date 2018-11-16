@@ -48,7 +48,7 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
-			<key>http://leacoachbe.somee.com</key>
+			<key>http://leacoach.gear.host</key>
 			<string></string>
 		</dict>
 		<key>NSAllowsArbitraryLoads</key>
