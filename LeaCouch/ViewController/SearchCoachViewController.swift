@@ -8,18 +8,20 @@
 
 import UIKit
 
-class SearchCoachViewController: UIViewController, UITableViewDataSource {
+class SearchCoachViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     
     @IBOutlet weak var coachTable: UITableView!
     @IBOutlet weak var coachSearchBar: UISearchBar!
     
     var coachesArray = [Coachesx]()
+    var currentCoachArray = [Coachesx]()  // to search, update table search
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         setUpCoaches()
+        
+        setUpSearchBar()
     }
     
     private func setUpCoaches() {
@@ -27,19 +29,22 @@ class SearchCoachViewController: UIViewController, UITableViewDataSource {
         coachesArray.append(Coachesx(name: "Roberto Marc", correo: "RobertoEnriquez@correo.com", speciality: .profesor, photo: "https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/82/square_thumb%402x.jpg", views: 125))
         coachesArray.append(Coachesx(name: "Richard Juarex", correo: "RichardEnriquez@correo.com", speciality: .engineer, photo: "https://www.ktbyte.com/resources/dist/assets/images/people/richard_zhou.jpg", views: 125))
         coachesArray.append(Coachesx(name: "Veronica Loo", correo: "VeronicaEnriquez@correo.com", speciality: .doctor, photo: "https://ct.yimg.com/cy/4592/38222887850_6ad7b5_128sq.jpg", views: 125))
+        
+        currentCoachArray = coachesArray  // update table search
     }
     
-    //cuando agregamos UITableVieDataSource
+    //Table, cuando agregamos UITableVieDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return coachesArray.count
+        //return coachesArray.count
+        return currentCoachArray.count  //update table search
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? CoachTableViewCell else {
             return UITableViewCell()
         }
-        cell.nameCoachLabel.text = coachesArray[indexPath.row].name
+        /*cell.nameCoachLabel.text = coachesArray[indexPath.row].name
         cell.correoCoachLabel.text = coachesArray[indexPath.row].correo
         cell.especialityCoachLabel.text = coachesArray[indexPath.row].speciality.rawValue
         //cell.coachImage.image = UIImage(named: coachesArray[indexPath.row].photo)
@@ -47,8 +52,42 @@ class SearchCoachViewController: UIViewController, UITableViewDataSource {
         if let url = URL(string: coachesArray[indexPath.row].photo) {
             cell.coachImage.af_setImage(withURL: url, placeholderImage: UIImage(named: "imagen_leacoach"))
         }
+        return cell*/
+        
+        // to update table search
+        cell.nameCoachLabel.text = currentCoachArray[indexPath.row].name
+        cell.correoCoachLabel.text = currentCoachArray[indexPath.row].correo
+        cell.especialityCoachLabel.text = currentCoachArray[indexPath.row].speciality.rawValue
+        //cell.coachImage.image = UIImage(named: currentCoachArray[indexPath.row].photo)
+        cell.itemsCoachLabel.text = String(currentCoachArray[indexPath.row].views)
+        if let url = URL(string: currentCoachArray[indexPath.row].photo) {
+            cell.coachImage.af_setImage(withURL: url, placeholderImage: UIImage(named: "imagen_leacoach"))
+        }
         return cell
     }
+    
+    // when I add UITableViewdelegate
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
+    }
+    
+    //to searchBar, add UISearchBarDelegate y vamos a su efinicion y copiamos las dos funciones de searchBar
+    private func setUpSearchBar() {
+        coachSearchBar.delegate = self
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        currentCoachArray = coachesArray.filter({ coach -> Bool in
+            guard let text = searchBar.text else {return false}
+            return coach.name.contains(text)
+            
+        })
+        coachTable.reloadData()
+    }
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        
+    }
+    
 }
 
 class Coachesx {
