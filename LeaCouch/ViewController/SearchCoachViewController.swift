@@ -26,9 +26,9 @@ class SearchCoachViewController: UIViewController, UITableViewDataSource, UITabl
     
     private func setUpCoaches() {
         coachesArray.append(Coachesx(name: "Maria enriquez", correo: "kevinEnriquez@correo.com", speciality: .engineer, photo: "https://www.b-plast2000.com/uploads/pics/maria_01.jpg", views: 125))
-        coachesArray.append(Coachesx(name: "Roberto Marc", correo: "RobertoEnriquez@correo.com", speciality: .profesor, photo: "https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/82/square_thumb%402x.jpg", views: 125))
-        coachesArray.append(Coachesx(name: "Richard Juarex", correo: "RichardEnriquez@correo.com", speciality: .engineer, photo: "https://www.ktbyte.com/resources/dist/assets/images/people/richard_zhou.jpg", views: 125))
-        coachesArray.append(Coachesx(name: "Veronica Loo", correo: "VeronicaEnriquez@correo.com", speciality: .doctor, photo: "https://ct.yimg.com/cy/4592/38222887850_6ad7b5_128sq.jpg", views: 125))
+        coachesArray.append(Coachesx(name: "Roberto Marc", correo: "RobertoEnriquez@correo.com", speciality: .profesor, photo: "https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/82/square_thumb%402x.jpg", views: 241))
+        coachesArray.append(Coachesx(name: "Richard Juarex", correo: "RichardEnriquez@correo.com", speciality: .engineer, photo: "https://www.ktbyte.com/resources/dist/assets/images/people/richard_zhou.jpg", views: 14))
+        coachesArray.append(Coachesx(name: "Veronica Loo", correo: "VeronicaEnriquez@correo.com", speciality: .doctor, photo: "https://ct.yimg.com/cy/4592/38222887850_6ad7b5_128sq.jpg", views: 99))
         
         currentCoachArray = coachesArray  // update table search
     }
