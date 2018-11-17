@@ -2,7 +2,7 @@
 //  HomePrueba.swift
 //  LeaCouch
 //
-//  Created by Alumnos on 11/8/18.
+//  Created by Jerber Valentin on 11/8/18.
 //  Copyright © 2018 KIVA. All rights reserved.
 //
 

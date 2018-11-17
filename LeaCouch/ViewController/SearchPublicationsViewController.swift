@@ -2,7 +2,7 @@
 //  SearchPublicationsViewController.swift
 //  LeaCouch
 //
-//  Created by Alumnos on 11/16/18.
+//  Created by Jerber Valentin on 11/16/18.
 //  Copyright © 2018 KIVA. All rights reserved.
 //
 
@@ -48,7 +48,6 @@ class SearchPublicationsViewController: UIViewController, UITableViewDataSource,
                     print("Response Error: \(error.localizedDescription)")
                 }
             })
-        //currentePublications = publications
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -106,4 +105,23 @@ class SearchPublicationsViewController: UIViewController, UITableViewDataSource,
         searchBar.text = ""
         publicationTable.reloadData()
     }
+    
+    //AboutPublications
+    var currentItemPublication: Int = 0
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showSearchPublication" {
+            let aboutPublicationViewController = (segue.destination as! UINavigationController).viewControllers.first as! AboutPublicationViewController
+            aboutPublicationViewController.myAboutPublication = currentePublications[currentItemPublication]
+        }
+       
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        publicationTable.reloadData()
+        currentItemPublication = indexPath.row
+        self.performSegue(withIdentifier: "showSearchPublication", sender: self)
+        
+    }
+    
 }

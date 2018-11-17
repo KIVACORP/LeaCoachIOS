@@ -2,7 +2,7 @@
 //  NewApiTutor.swift
 //  LeaCouch
 //
-//  Created by ALEXIS-PC on 10/24/18.
+//  Created by Jerber Valentin on 10/24/18.
 //  Copyright © 2018 UPC. All rights reserved.
 //
 

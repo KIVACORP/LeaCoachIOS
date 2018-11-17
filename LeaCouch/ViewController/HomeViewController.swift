@@ -2,7 +2,7 @@
 //  HomeViewController.swift
 //  LeaCouch
 //
-//  Created by ALEXIS-PC on 11/8/18.
+//  Created by Jerber Valentin on 11/8/18.
 //  Copyright © 2018 KIVA. All rights reserved.
 //
 
@@ -81,5 +81,19 @@ class HomeViewController: UICollectionViewController {
         return cell
     }
 
+    //AboutPublications
+    var currentItemPublication: Int = 0
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showMyPublication" {
+            let aboutPublicationViewController = (segue.destination as! UINavigationController).viewControllers.first as! AboutPublicationViewController
+            aboutPublicationViewController.myAboutPublication = publications[currentItemPublication]
+        }
+    }
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        currentItemPublication = indexPath.row
+        self.performSegue(withIdentifier: "showMyPublication", sender: self)
+    }
 
+    
 }

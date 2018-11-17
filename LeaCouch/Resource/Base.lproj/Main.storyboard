@@ -108,6 +108,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Home" id="L8G-9Q-eL2"/>
+                    <connections>
+                        <segue destination="2uR-dI-hM8" kind="show" identifier="showMyPublication" id="I3a-oG-3zo"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oaD-Tm-Di9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -785,11 +788,79 @@
                     <connections>
                         <outlet property="publicationTable" destination="SPg-Pb-MdO" id="v6K-jH-izB"/>
                         <outlet property="searchPublicationBar" destination="vxH-66-DyM" id="aKU-tz-qNP"/>
+                        <segue destination="2uR-dI-hM8" kind="show" identifier="showSearchPublication" id="ff1-y7-nw8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TVV-Vx-oa7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2850.7246376811595" y="2525.8928571428569"/>
+        </scene>
+        <!--About Publication-->
+        <scene sceneID="HyD-gi-TWl">
+            <objects>
+                <viewController id="LpE-VL-bgL" customClass="AboutPublicationViewController" customModule="LeaCouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gb2-aW-SMb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="698"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p7h-zB-Q6v">
+                                <rect key="frame" x="0.0" y="166" width="414" height="498"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zj4-eb-zXI">
+                                <rect key="frame" x="0.0" y="88" width="414" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAe-9t-8Yj">
+                                <rect key="frame" x="0.0" y="126.99999999999999" width="92.333333333333329" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="aDescription" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4C-Sp-xTj">
+                                <rect key="frame" x="100.33333333333334" y="126.99999999999999" width="313.66666666666663" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ePf-qc-BHK" firstAttribute="bottom" secondItem="K4C-Sp-xTj" secondAttribute="bottom" constant="665.66666666666674" id="1Gh-li-nmc"/>
+                            <constraint firstItem="VAe-9t-8Yj" firstAttribute="leading" secondItem="ePf-qc-BHK" secondAttribute="leading" id="29s-ms-Hr8"/>
+                            <constraint firstItem="p7h-zB-Q6v" firstAttribute="bottom" secondItem="ePf-qc-BHK" secondAttribute="bottom" id="6Vj-PO-mxU"/>
+                            <constraint firstItem="K4C-Sp-xTj" firstAttribute="top" secondItem="ePf-qc-BHK" secondAttribute="top" constant="39" id="Gow-3q-VrA"/>
+                            <constraint firstItem="p7h-zB-Q6v" firstAttribute="trailing" secondItem="ePf-qc-BHK" secondAttribute="trailing" id="LKP-df-pOy"/>
+                            <constraint firstItem="ePf-qc-BHK" firstAttribute="bottom" secondItem="VAe-9t-8Yj" secondAttribute="bottom" constant="665.66666666666674" id="Ujm-8w-cqm"/>
+                            <constraint firstItem="zj4-eb-zXI" firstAttribute="top" secondItem="ePf-qc-BHK" secondAttribute="top" id="bEz-LY-iGY"/>
+                            <constraint firstItem="zj4-eb-zXI" firstAttribute="leading" secondItem="ePf-qc-BHK" secondAttribute="leading" id="bfv-5T-sdV"/>
+                            <constraint firstItem="p7h-zB-Q6v" firstAttribute="leading" secondItem="ePf-qc-BHK" secondAttribute="leading" id="dQI-2R-mEr"/>
+                            <constraint firstItem="VAe-9t-8Yj" firstAttribute="top" secondItem="ePf-qc-BHK" secondAttribute="top" constant="39" id="fum-kJ-CmT"/>
+                            <constraint firstItem="p7h-zB-Q6v" firstAttribute="top" secondItem="ePf-qc-BHK" secondAttribute="top" constant="78" id="iUi-WD-yOd"/>
+                            <constraint firstItem="K4C-Sp-xTj" firstAttribute="trailing" secondItem="ePf-qc-BHK" secondAttribute="trailing" id="k5O-0y-noD"/>
+                            <constraint firstItem="ePf-qc-BHK" firstAttribute="bottom" secondItem="zj4-eb-zXI" secondAttribute="bottom" constant="704.66666666666663" id="piD-Mn-WU7"/>
+                            <constraint firstItem="K4C-Sp-xTj" firstAttribute="leading" secondItem="VAe-9t-8Yj" secondAttribute="trailing" constant="8.0000000000000142" id="uzX-6N-eK3"/>
+                            <constraint firstItem="zj4-eb-zXI" firstAttribute="trailing" secondItem="ePf-qc-BHK" secondAttribute="trailing" id="z3V-5Z-Pmv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ePf-qc-BHK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About Publication" id="b2h-DG-obR">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="Ra3-EQ-CxG">
+                            <connections>
+                                <action selector="doneAboutPublication:" destination="LpE-VL-bgL" id="1Vh-eQ-AQG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="aDescriptionPublicationLabel" destination="K4C-Sp-xTj" id="cNg-7k-8Iy"/>
+                        <outlet property="aPicturePublicationImage" destination="p7h-zB-Q6v" id="2am-Gx-a9W"/>
+                        <outlet property="aTitlePublicationLabel" destination="zj4-eb-zXI" id="hbH-qL-f5k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cs4-6t-RNo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1476.8115942028987" y="3929.4642857142853"/>
         </scene>
         <!--Search Coach View Controller-->
         <scene sceneID="szy-Kx-jb8">
@@ -910,6 +981,24 @@
             </objects>
             <point key="canvasLocation" x="2198.5507246376815" y="2526.2276785714284"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7XZ-Lg-kiI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2uR-dI-hM8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wQM-8W-mN9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LpE-VL-bgL" kind="relationship" relationship="rootViewController" id="jXe-sJ-F81"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oG5-qp-EHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1477" y="3202"/>
+        </scene>
     </scenes>
     <resources>
         <image name="docx-file-format-32" width="32" height="32"/>
@@ -922,4 +1011,7 @@
         <image name="profile-24" width="24" height="24"/>
         <image name="search-24" width="24" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ff1-y7-nw8"/>
+    </inferredMetricsTieBreakers>
 </document>

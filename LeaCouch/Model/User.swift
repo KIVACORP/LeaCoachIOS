@@ -2,7 +2,7 @@
 //  User.swift
 //  LeaCouch
 //
-//  Created by ALEXIS-PC on 11/8/18.
+//  Created by Jerber Valentin on 11/8/18.
 //  Copyright © 2018 KIVA. All rights reserved.
 //
 import Foundation

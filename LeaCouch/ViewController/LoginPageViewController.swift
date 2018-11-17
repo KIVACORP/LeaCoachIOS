@@ -2,7 +2,7 @@
 //  LoginPageViewController.swift
 //  LeaCouch
 //
-//  Created by Alumnos on 10/11/18.
+//  Created by Jerber Valentin on 10/11/18.
 //  Copyright © 2018 UPC. All rights reserved.
 //
 
