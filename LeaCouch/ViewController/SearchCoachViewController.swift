@@ -44,16 +44,7 @@ class SearchCoachViewController: UIViewController, UITableViewDataSource, UITabl
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? CoachTableViewCell else {
             return UITableViewCell()
         }
-        /*cell.nameCoachLabel.text = coachesArray[indexPath.row].name
-        cell.correoCoachLabel.text = coachesArray[indexPath.row].correo
-        cell.especialityCoachLabel.text = coachesArray[indexPath.row].speciality.rawValue
-        //cell.coachImage.image = UIImage(named: coachesArray[indexPath.row].photo)
-        cell.itemsCoachLabel.text = String(coachesArray[indexPath.row].views)
-        if let url = URL(string: coachesArray[indexPath.row].photo) {
-            cell.coachImage.af_setImage(withURL: url, placeholderImage: UIImage(named: "imagen_leacoach"))
-        }
-        return cell*/
-        
+               
         // to update table search
         cell.nameCoachLabel.text = currentCoachArray[indexPath.row].name
         cell.correoCoachLabel.text = currentCoachArray[indexPath.row].correo
@@ -76,16 +67,29 @@ class SearchCoachViewController: UIViewController, UITableViewDataSource, UITabl
         coachSearchBar.delegate = self
     }
     
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {        
+        // to reload if not search and lower-uper case
+        guard !searchText.isEmpty else {
+            currentCoachArray = coachesArray
+            coachTable.reloadData()
+            return
+        }
         currentCoachArray = coachesArray.filter({ coach -> Bool in
-            guard let text = searchBar.text else {return false}
-            return coach.name.contains(text)
+            coach.name.lowercased().contains(searchText.lowercased())
             
         })
         coachTable.reloadData()
     }
+    //search all
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
         
+    }
+    
+    //cancel search
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        currentCoachArray = coachesArray
+        searchBar.text = ""
+        coachTable.reloadData()
     }
     
 }
