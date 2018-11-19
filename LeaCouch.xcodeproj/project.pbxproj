@@ -33,6 +33,7 @@
 		DF16734421822EE200FA1D96 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF1672F921822E7500FA1D96 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E3896A6021819A8900E22752 /* NewApiTutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3896A5F21819A8900E22752 /* NewApiTutor.swift */; };
 		E3896A6221819EA000E22752 /* Tutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3896A6121819EA000E22752 /* Tutor.swift */; };
+		E3DE3C8221A27F610011D41A /* ResultX.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DE3C8121A27F610011D41A /* ResultX.swift */; };
 		E3F270B821944C140041ED6C /* Publication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F270B721944C140041ED6C /* Publication.swift */; };
 		E3F270D021944C2B0041ED6C /* Career.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F270CF21944C2B0041ED6C /* Career.swift */; };
 		E3F270D221944C3A0041ED6C /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F270D121944C3A0041ED6C /* Course.swift */; };
@@ -281,6 +282,7 @@
 		DF16731F21822E8600FA1D96 /* AlamofireImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AlamofireImage.xcodeproj; path = AlamofireImage/AlamofireImage.xcodeproj; sourceTree = "<group>"; };
 		E3896A5F21819A8900E22752 /* NewApiTutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewApiTutor.swift; sourceTree = "<group>"; };
 		E3896A6121819EA000E22752 /* Tutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutor.swift; sourceTree = "<group>"; };
+		E3DE3C8121A27F610011D41A /* ResultX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultX.swift; sourceTree = "<group>"; };
 		E3F270B721944C140041ED6C /* Publication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publication.swift; sourceTree = "<group>"; };
 		E3F270CF21944C2B0041ED6C /* Career.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Career.swift; sourceTree = "<group>"; };
 		E3F270D121944C3A0041ED6C /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
@@ -436,6 +438,7 @@
 				E3F270D721944C740041ED6C /* User.swift */,
 				E3F270D921944C880041ED6C /* Type.swift */,
 				7FED3CCB219492DE00E19320 /* HomePrueba.swift */,
+				E3DE3C8121A27F610011D41A /* ResultX.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -789,6 +792,7 @@
 				7F0BEB00219E49FF001FE933 /* PublicationsViewController.swift in Sources */,
 				E3F270D021944C2B0041ED6C /* Career.swift in Sources */,
 				7FED3CCC219492DE00E19320 /* HomePrueba.swift in Sources */,
+				E3DE3C8221A27F610011D41A /* ResultX.swift in Sources */,
 				E3F270D221944C3A0041ED6C /* Course.swift in Sources */,
 				7F29D51521701F1D0092530F /* ViewController.swift in Sources */,
 				E3F270DC219453280041ED6C /* HomeViewController.swift in Sources */,

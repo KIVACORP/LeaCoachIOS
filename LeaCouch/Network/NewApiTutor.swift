@@ -11,7 +11,7 @@ import Foundation
 class NewApiTutor{
     static let baseUrl1 = "https://socket.tutorcruncher.com"
     static let keyUrl1 = "/9c79f14df986a1ec693c"
-    static let tutorUrl1 = baseUrl1 + "keyUrl1" + "/contractors"
+    static let tutorUrl1 = baseUrl1 + keyUrl1 + "/contractors"
     
     //leacoach
     static let baseUrl = "http://leacoach.gear.host/leacoach/v1"
