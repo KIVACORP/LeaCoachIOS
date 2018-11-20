@@ -25,9 +25,9 @@ class PublicationCell: UICollectionViewCell {
             publicationImage.af_setImage(withURL: url, placeholderImage: UIImage(named: "file-unavailable"))
         }
         namePublicationLabel.text = publication.name
-        datePublicationLabel.text = publication.date
-        descriptionPublicationLabel.text = publication.description
-        viewsPublicationLabel.text = String(publication.views)
+        //datePublicationLabel.text = publication.date
+        //descriptionPublicationLabel.text = publication.description
+        //viewsPublicationLabel.text = String(publication.views)
     }
 }
 class HomeViewController: UICollectionViewController {

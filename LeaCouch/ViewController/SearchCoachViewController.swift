@@ -110,4 +110,23 @@ class SearchCoachViewController: UIViewController, UITableViewDataSource, UITabl
         coachTable.reloadData()
     }
     
+    
+    //About tutors
+    var currentItemtutor: Int = 0
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowAboutTutor" {
+            let aboutTutorViewController = (segue.destination as! UINavigationController).viewControllers.first as! AboutTutorViewController
+            aboutTutorViewController.myAboutTutor = currentResults[currentItemtutor]
+        }
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        coachTable.reloadData()
+        currentItemtutor = indexPath.row
+        self.performSegue(withIdentifier: "ShowAboutTutor", sender: self)
+        
+    }
+    
 }

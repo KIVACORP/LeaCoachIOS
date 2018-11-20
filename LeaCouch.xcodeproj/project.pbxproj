@@ -10,6 +10,7 @@
 		7F0BEAFE219E49DF001FE933 /* CoachesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BEAFD219E49DF001FE933 /* CoachesViewController.swift */; };
 		7F0BEB00219E49FF001FE933 /* PublicationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BEAFF219E49FF001FE933 /* PublicationsViewController.swift */; };
 		7F0BEB02219E4C2D001FE933 /* MasterSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BEB01219E4C2D001FE933 /* MasterSearchViewController.swift */; };
+		7F24984721A399A500956DC8 /* AboutTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F24984621A399A500956DC8 /* AboutTutorViewController.swift */; };
 		7F29D51321701F1D0092530F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F29D51221701F1D0092530F /* AppDelegate.swift */; };
 		7F29D51521701F1D0092530F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F29D51421701F1D0092530F /* ViewController.swift */; };
 		7F29D51821701F1D0092530F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F29D51621701F1D0092530F /* Main.storyboard */; };
@@ -256,6 +257,7 @@
 		7F0BEAFD219E49DF001FE933 /* CoachesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachesViewController.swift; sourceTree = "<group>"; };
 		7F0BEAFF219E49FF001FE933 /* PublicationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationsViewController.swift; sourceTree = "<group>"; };
 		7F0BEB01219E4C2D001FE933 /* MasterSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterSearchViewController.swift; sourceTree = "<group>"; };
+		7F24984621A399A500956DC8 /* AboutTutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTutorViewController.swift; sourceTree = "<group>"; };
 		7F29D50F21701F1D0092530F /* LeaCouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaCouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F29D51221701F1D0092530F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F29D51421701F1D0092530F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -476,6 +478,7 @@
 				7F316DCC219F8F35001D71D2 /* SearchPublicationsViewController.swift */,
 				7F316DCE219F9D3E001D71D2 /* PublicationsTableViewCell.swift */,
 				7F316DD0219FAF7F001D71D2 /* AboutPublicationViewController.swift */,
+				7F24984621A399A500956DC8 /* AboutTutorViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -805,6 +808,7 @@
 				7F316DCB219F675E001D71D2 /* CoachTableViewCell.swift in Sources */,
 				7F0BEAFE219E49DF001FE933 /* CoachesViewController.swift in Sources */,
 				E3896A6221819EA000E22752 /* Tutor.swift in Sources */,
+				7F24984721A399A500956DC8 /* AboutTutorViewController.swift in Sources */,
 				E3F270DA21944C880041ED6C /* Type.swift in Sources */,
 				E3F270B821944C140041ED6C /* Publication.swift in Sources */,
 				7F316DB3219F65D3001D71D2 /* SearchCoachViewController.swift in Sources */,
