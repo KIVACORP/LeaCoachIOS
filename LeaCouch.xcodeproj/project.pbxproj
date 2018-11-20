@@ -25,6 +25,7 @@
 		7F316DCD219F8F35001D71D2 /* SearchPublicationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F316DCC219F8F35001D71D2 /* SearchPublicationsViewController.swift */; };
 		7F316DCF219F9D3E001D71D2 /* PublicationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F316DCE219F9D3E001D71D2 /* PublicationsTableViewCell.swift */; };
 		7F316DD1219FAF7F001D71D2 /* AboutPublicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F316DD0219FAF7F001D71D2 /* AboutPublicationViewController.swift */; };
+		7F8D829321A4C48200131587 /* CoachMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F8D829221A4C48200131587 /* CoachMain.storyboard */; };
 		7FED3CCC219492DE00E19320 /* HomePrueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FED3CCB219492DE00E19320 /* HomePrueba.swift */; };
 		DF16733B21822ECF00FA1D96 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF16732C21822E8600FA1D96 /* AlamofireImage.framework */; };
 		DF16733C21822ECF00FA1D96 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF16732C21822E8600FA1D96 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -278,6 +279,7 @@
 		7F316DCC219F8F35001D71D2 /* SearchPublicationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPublicationsViewController.swift; sourceTree = "<group>"; };
 		7F316DCE219F9D3E001D71D2 /* PublicationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicationsTableViewCell.swift; sourceTree = "<group>"; };
 		7F316DD0219FAF7F001D71D2 /* AboutPublicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPublicationViewController.swift; sourceTree = "<group>"; };
+		7F8D829221A4C48200131587 /* CoachMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoachMain.storyboard; sourceTree = "<group>"; };
 		7FED3CCB219492DE00E19320 /* HomePrueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePrueba.swift; sourceTree = "<group>"; };
 		DF1672ED21822E7400FA1D96 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		DF16730621822E7E00FA1D96 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
@@ -377,6 +379,13 @@
 			path = LeaCouchUITests;
 			sourceTree = "<group>";
 		};
+		7F8D82AA21A4C74400131587 /* CouchController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CouchController;
+			sourceTree = "<group>";
+		};
 		DF1672EE21822E7400FA1D96 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,6 +468,7 @@
 				7F29D51621701F1D0092530F /* Main.storyboard */,
 				7F29D51921701F200092530F /* Assets.xcassets */,
 				7F29D51B21701F200092530F /* LaunchScreen.storyboard */,
+				7F8D829221A4C48200131587 /* CoachMain.storyboard */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -479,6 +489,7 @@
 				7F316DCE219F9D3E001D71D2 /* PublicationsTableViewCell.swift */,
 				7F316DD0219FAF7F001D71D2 /* AboutPublicationViewController.swift */,
 				7F24984621A399A500956DC8 /* AboutTutorViewController.swift */,
+				7F8D82AA21A4C74400131587 /* CouchController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -764,6 +775,7 @@
 			files = (
 				7F29D51D21701F200092530F /* LaunchScreen.storyboard in Resources */,
 				7F29D51A21701F200092530F /* Assets.xcassets in Resources */,
+				7F8D829321A4C48200131587 /* CoachMain.storyboard in Resources */,
 				7F29D51821701F1D0092530F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
