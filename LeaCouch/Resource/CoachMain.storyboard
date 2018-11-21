@@ -81,6 +81,15 @@
                                     <segue destination="0RM-7i-37F" kind="show" identifier="registerView" id="bow-cY-Q0J"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gO3-b4-DcL">
+                                <rect key="frame" x="0.0" y="758" width="414" height="30"/>
+                                <state key="normal" title="SOY ESTUDIANTE">
+                                    <color key="titleColor" red="0.94117647059999998" green="0.7725490196" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aKS-LC-vNJ" kind="show" id="eXS-k6-HBi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.08235294118" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -90,9 +99,11 @@
                             <constraint firstItem="ctk-0c-3sE" firstAttribute="leading" secondItem="vjV-Om-PXX" secondAttribute="leading" constant="43" id="2jK-TM-T5y"/>
                             <constraint firstItem="Et3-T9-wKz" firstAttribute="trailing" secondItem="dTu-Br-fFp" secondAttribute="trailing" id="31P-0S-Tj2"/>
                             <constraint firstItem="dTu-Br-fFp" firstAttribute="trailing" secondItem="ZLU-IW-5eB" secondAttribute="trailing" constant="196" id="3vR-qZ-I1j"/>
+                            <constraint firstItem="dTu-Br-fFp" firstAttribute="bottom" secondItem="gO3-b4-DcL" secondAttribute="bottom" constant="17" id="49x-aq-oCk"/>
                             <constraint firstItem="Hd2-B8-VsO" firstAttribute="top" secondItem="ZLU-IW-5eB" secondAttribute="bottom" constant="35" id="4YX-37-rww"/>
                             <constraint firstItem="dTu-Br-fFp" firstAttribute="trailing" secondItem="pNv-gr-aU5" secondAttribute="trailing" constant="16" id="5OH-K1-mcv"/>
                             <constraint firstItem="dTu-Br-fFp" firstAttribute="trailing" secondItem="k9G-yP-1iq" secondAttribute="trailing" constant="16" id="5oR-ig-XO3"/>
+                            <constraint firstItem="gO3-b4-DcL" firstAttribute="trailing" secondItem="dTu-Br-fFp" secondAttribute="trailing" id="6Nx-d1-rr0"/>
                             <constraint firstItem="bqV-OA-QZL" firstAttribute="top" secondItem="e7D-UR-47a" secondAttribute="bottom" constant="16" id="6al-No-mIs"/>
                             <constraint firstItem="dTu-Br-fFp" firstAttribute="trailing" secondItem="ctk-0c-3sE" secondAttribute="trailing" constant="20" id="7eD-UO-bof"/>
                             <constraint firstItem="dTu-Br-fFp" firstAttribute="trailing" secondItem="ZLU-IW-5eB" secondAttribute="trailing" constant="200" id="89F-Ao-bcz"/>
@@ -106,9 +117,11 @@
                             <constraint firstItem="pNv-gr-aU5" firstAttribute="leading" secondItem="dTu-Br-fFp" secondAttribute="leading" constant="12" id="E7L-nY-q0g"/>
                             <constraint firstItem="ctk-0c-3sE" firstAttribute="top" secondItem="pNv-gr-aU5" secondAttribute="bottom" constant="14" id="ETJ-7B-E6o"/>
                             <constraint firstItem="e7D-UR-47a" firstAttribute="top" secondItem="wlY-ow-7tI" secondAttribute="bottom" constant="7.6666666666666856" id="Ebp-fG-YGh"/>
+                            <constraint firstItem="dTu-Br-fFp" firstAttribute="trailing" secondItem="gO3-b4-DcL" secondAttribute="trailing" constant="322" id="FMt-Nb-ojK"/>
                             <constraint firstItem="wlY-ow-7tI" firstAttribute="leading" secondItem="dTu-Br-fFp" secondAttribute="leading" constant="16" id="FjB-JE-KWo"/>
                             <constraint firstItem="wlY-ow-7tI" firstAttribute="top" secondItem="k9G-yP-1iq" secondAttribute="bottom" constant="11.666666666666671" id="H1d-vq-uHd"/>
                             <constraint firstItem="ZLU-IW-5eB" firstAttribute="top" secondItem="ctk-0c-3sE" secondAttribute="bottom" constant="30" id="HAY-In-s16"/>
+                            <constraint firstItem="gO3-b4-DcL" firstAttribute="top" secondItem="ZLU-IW-5eB" secondAttribute="bottom" constant="8" id="Hwj-Rz-JJ1"/>
                             <constraint firstItem="pNv-gr-aU5" firstAttribute="leading" secondItem="dTu-Br-fFp" secondAttribute="leading" constant="16" id="LeR-M1-SEa"/>
                             <constraint firstItem="wlY-ow-7tI" firstAttribute="leading" secondItem="vjV-Om-PXX" secondAttribute="leading" constant="43" id="LlK-KV-TeV"/>
                             <constraint firstItem="dTu-Br-fFp" firstAttribute="trailing" secondItem="wlY-ow-7tI" secondAttribute="trailing" constant="16" id="Log-EV-dwg"/>
@@ -144,18 +157,22 @@
                             <constraint firstItem="dTu-Br-fFp" firstAttribute="trailing" secondItem="ctk-0c-3sE" secondAttribute="trailing" constant="16" id="ghP-Ap-bMl"/>
                             <constraint firstItem="ZLU-IW-5eB" firstAttribute="top" secondItem="pNv-gr-aU5" secondAttribute="bottom" constant="20" id="hRC-Xm-hkQ"/>
                             <constraint firstItem="pNv-gr-aU5" firstAttribute="top" secondItem="bqV-OA-QZL" secondAttribute="bottom" constant="8" id="hvd-Ow-Blw"/>
+                            <constraint firstItem="dTu-Br-fFp" firstAttribute="bottom" secondItem="gO3-b4-DcL" secondAttribute="bottom" constant="25" id="hwD-wI-X0k"/>
                             <constraint firstItem="bqV-OA-QZL" firstAttribute="leading" secondItem="vjV-Om-PXX" secondAttribute="leading" constant="43" id="kpF-Wb-Pzv"/>
                             <constraint firstItem="e7D-UR-47a" firstAttribute="leading" secondItem="dTu-Br-fFp" secondAttribute="leading" constant="16" id="l2I-OU-5sg"/>
                             <constraint firstItem="pNv-gr-aU5" firstAttribute="top" secondItem="bqV-OA-QZL" secondAttribute="bottom" constant="8" id="nIl-hC-BSc"/>
                             <constraint firstItem="ZLU-IW-5eB" firstAttribute="top" secondItem="ctk-0c-3sE" secondAttribute="bottom" constant="42" id="oaM-fw-HZT"/>
                             <constraint firstItem="dTu-Br-fFp" firstAttribute="trailing" secondItem="bqV-OA-QZL" secondAttribute="trailing" constant="16" id="oo0-ff-gR8"/>
                             <constraint firstItem="dTu-Br-fFp" firstAttribute="bottom" secondItem="ctk-0c-3sE" secondAttribute="bottom" constant="49" id="p2a-o6-gyR"/>
+                            <constraint firstItem="gO3-b4-DcL" firstAttribute="top" secondItem="Hd2-B8-VsO" secondAttribute="bottom" constant="137" id="qSL-eg-XuD"/>
                             <constraint firstItem="dTu-Br-fFp" firstAttribute="trailing" secondItem="bqV-OA-QZL" secondAttribute="trailing" constant="20" id="qoV-Tw-QBO"/>
                             <constraint firstItem="k9G-yP-1iq" firstAttribute="leading" secondItem="dTu-Br-fFp" secondAttribute="leading" constant="20" id="r1W-1r-9xv"/>
                             <constraint firstItem="ctk-0c-3sE" firstAttribute="top" secondItem="pNv-gr-aU5" secondAttribute="bottom" constant="14" id="snm-bh-F8I"/>
                             <constraint firstItem="Hd2-B8-VsO" firstAttribute="leading" secondItem="dTu-Br-fFp" secondAttribute="leading" constant="12" id="tDx-l7-DeL"/>
+                            <constraint firstItem="gO3-b4-DcL" firstAttribute="leading" secondItem="dTu-Br-fFp" secondAttribute="leading" constant="305" id="tZv-DN-i7Q"/>
                             <constraint firstItem="dTu-Br-fFp" firstAttribute="trailing" secondItem="Hd2-B8-VsO" secondAttribute="trailing" constant="16" id="to8-fw-B7u"/>
                             <constraint firstItem="Hd2-B8-VsO" firstAttribute="top" secondItem="ZLU-IW-5eB" secondAttribute="bottom" constant="35" id="wOk-l6-vvG"/>
+                            <constraint firstItem="gO3-b4-DcL" firstAttribute="leading" secondItem="dTu-Br-fFp" secondAttribute="leading" id="xPl-y4-0cd"/>
                             <constraint firstItem="e7D-UR-47a" firstAttribute="top" secondItem="wlY-ow-7tI" secondAttribute="bottom" constant="8" id="xbR-fS-6Ol"/>
                             <constraint firstItem="dTu-Br-fFp" firstAttribute="trailing" secondItem="e7D-UR-47a" secondAttribute="trailing" constant="16" id="xhu-Gu-355"/>
                             <constraint firstItem="bqV-OA-QZL" firstAttribute="leading" secondItem="dTu-Br-fFp" secondAttribute="leading" constant="12" id="ybm-cs-Q5i"/>
@@ -166,10 +183,12 @@
                             <mask key="constraints">
                                 <exclude reference="0qI-Ak-pIW"/>
                                 <exclude reference="0qb-ae-rxT"/>
+                                <exclude reference="49x-aq-oCk"/>
                                 <exclude reference="5oR-ig-XO3"/>
                                 <exclude reference="7eD-UO-bof"/>
                                 <exclude reference="89F-Ao-bcz"/>
                                 <exclude reference="DS2-Mz-GC0"/>
+                                <exclude reference="FMt-Nb-ojK"/>
                                 <exclude reference="RvE-gt-pfw"/>
                                 <exclude reference="Wmz-Wh-PIE"/>
                                 <exclude reference="XcZ-gg-qfb"/>
@@ -181,8 +200,6 @@
                                 <exclude reference="etv-ag-t9F"/>
                                 <exclude reference="p2a-o6-gyR"/>
                                 <exclude reference="qoV-Tw-QBO"/>
-                                <exclude reference="9jL-Bc-zwI"/>
-                                <exclude reference="eUX-Ny-mJi"/>
                                 <exclude reference="E5h-rb-hKF"/>
                                 <exclude reference="P1J-Dh-wh8"/>
                                 <exclude reference="H1d-vq-uHd"/>
@@ -207,6 +224,10 @@
                                 <exclude reference="Mrs-Ti-LKG"/>
                                 <exclude reference="ahH-qk-Ogq"/>
                                 <exclude reference="hRC-Xm-hkQ"/>
+                                <exclude reference="9jL-Bc-zwI"/>
+                                <exclude reference="eUX-Ny-mJi"/>
+                                <exclude reference="Hwj-Rz-JJ1"/>
+                                <exclude reference="tZv-DN-i7Q"/>
                                 <exclude reference="Aho-Ic-a5f"/>
                                 <exclude reference="Z8U-sN-abM"/>
                                 <exclude reference="tDx-l7-DeL"/>
@@ -260,10 +281,12 @@
                                 <include reference="0qI-Ak-pIW"/>
                                 <include reference="0qb-ae-rxT"/>
                                 <exclude reference="3vR-qZ-I1j"/>
+                                <include reference="49x-aq-oCk"/>
                                 <exclude reference="5OH-K1-mcv"/>
                                 <include reference="5oR-ig-XO3"/>
                                 <exclude reference="AQ1-He-3J7"/>
                                 <include reference="DS2-Mz-GC0"/>
+                                <include reference="FMt-Nb-ojK"/>
                                 <exclude reference="Log-EV-dwg"/>
                                 <exclude reference="Uzl-rp-STR"/>
                                 <include reference="XcZ-gg-qfb"/>
@@ -273,15 +296,11 @@
                                 <include reference="eo6-J9-K2m"/>
                                 <include reference="etv-ag-t9F"/>
                                 <exclude reference="ghP-Ap-bMl"/>
+                                <exclude reference="hwD-wI-X0k"/>
                                 <exclude reference="oo0-ff-gR8"/>
                                 <include reference="p2a-o6-gyR"/>
                                 <exclude reference="to8-fw-B7u"/>
                                 <exclude reference="xhu-Gu-355"/>
-                                <exclude reference="31P-0S-Tj2"/>
-                                <include reference="9jL-Bc-zwI"/>
-                                <exclude reference="QVj-wT-E01"/>
-                                <exclude reference="WW6-x9-rI2"/>
-                                <include reference="eUX-Ny-mJi"/>
                                 <include reference="E5h-rb-hKF"/>
                                 <include reference="P1J-Dh-wh8"/>
                                 <exclude reference="dm3-ge-IPe"/>
@@ -310,6 +329,16 @@
                                 <include reference="Mrs-Ti-LKG"/>
                                 <include reference="hRC-Xm-hkQ"/>
                                 <exclude reference="oaM-fw-HZT"/>
+                                <exclude reference="31P-0S-Tj2"/>
+                                <include reference="9jL-Bc-zwI"/>
+                                <exclude reference="QVj-wT-E01"/>
+                                <exclude reference="WW6-x9-rI2"/>
+                                <include reference="eUX-Ny-mJi"/>
+                                <exclude reference="6Nx-d1-rr0"/>
+                                <include reference="Hwj-Rz-JJ1"/>
+                                <exclude reference="qSL-eg-XuD"/>
+                                <include reference="tZv-DN-i7Q"/>
+                                <exclude reference="xPl-y4-0cd"/>
                                 <exclude reference="1Eo-ru-2x6"/>
                                 <exclude reference="4YX-37-rww"/>
                                 <include reference="Aho-Ic-a5f"/>
@@ -327,7 +356,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ape-dj-KZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1017" y="172"/>
+            <point key="canvasLocation" x="1016.5178571428571" y="171.01449275362319"/>
         </scene>
         <!--Register Page View Controller-->
         <scene sceneID="2Sm-Sw-gVZ">
@@ -437,6 +466,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KUh-iO-A0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1942" y="173"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="btO-5C-4OH">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="aKS-LC-vNJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Unx-KM-2gc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="464" y="571"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kKm-8c-qlH">
@@ -656,34 +693,34 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DU4-lf-6fv">
-                                                    <rect key="frame" x="10" y="8" width="73" height="96"/>
+                                                    <rect key="frame" x="10" y="8" width="379" height="96"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="views" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43t-9j-eNy">
-                                                    <rect key="frame" x="322" y="82" width="43" height="21"/>
+                                                    <rect key="frame" x="628" y="82" width="43" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Historia contemporanea del" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnQ-cH-wE7">
-                                                    <rect key="frame" x="94" y="11" width="320" height="20"/>
+                                                    <rect key="frame" x="400" y="11" width="320" height="20"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 de diciembe del 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RT5-jG-zXS">
-                                                    <rect key="frame" x="94" y="39" width="320" height="17"/>
+                                                    <rect key="frame" x="400" y="39" width="320" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curso practico intensivo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRT-MD-sK4">
-                                                    <rect key="frame" x="94" y="64" width="320" height="20"/>
+                                                    <rect key="frame" x="400" y="64" width="320" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye-24" translatesAutoresizingMaskIntoConstraints="NO" id="Yct-Ua-Tvp">
-                                                    <rect key="frame" x="370" y="82" width="24" height="24"/>
+                                                    <rect key="frame" x="370" y="82" width="330" height="24"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -752,34 +789,34 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p3X-UM-Rsi">
-                                                    <rect key="frame" x="10" y="8" width="73" height="96"/>
+                                                    <rect key="frame" x="10" y="8" width="379" height="96"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="views" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYT-yc-zs8">
-                                                    <rect key="frame" x="322" y="82" width="43" height="21"/>
+                                                    <rect key="frame" x="628" y="82" width="43" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Historia contemporanea del" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLJ-79-ABL">
-                                                    <rect key="frame" x="94" y="11" width="320" height="20"/>
+                                                    <rect key="frame" x="400" y="11" width="320" height="20"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 de diciembe del 2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xm0-MV-Q8T">
-                                                    <rect key="frame" x="94" y="39" width="320" height="17"/>
+                                                    <rect key="frame" x="400" y="39" width="320" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curso practico intensivo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHj-01-LZc">
-                                                    <rect key="frame" x="94" y="64" width="320" height="20"/>
+                                                    <rect key="frame" x="400" y="64" width="320" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye-24" translatesAutoresizingMaskIntoConstraints="NO" id="00i-Ws-QCW">
-                                                    <rect key="frame" x="370" y="82" width="24" height="24"/>
+                                                    <rect key="frame" x="370" y="82" width="330" height="24"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>

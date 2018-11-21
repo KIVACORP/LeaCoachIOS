@@ -17,17 +17,17 @@ class AboutTutorViewController: UIViewController {
     @IBOutlet weak var likeTutorLabel: UILabel!
     @IBOutlet weak var premiumDocImage: UIImageView!
     
-    var myAboutTutor: ResultX?
+    var myAboutTutor: Tutor?
     override func viewDidLoad() {
         super.viewDidLoad()
 
         if let myTutors = myAboutTutor {
             aboutNameTutorLabel.text = myTutors.name
-            aboutEmailTutorLabel.text = myTutors.link + "@gmail.com"
-            aboutDescriptionTutorLabel.text = myTutors.primary_description
-            numDocTutorLabel.text = String(myTutors.review_duration)
-            likeTutorLabel.text = String(myTutors.review_rating)
-            if let urlPhoto = URL(string: NewApiTutor.baseUrl1 + myTutors.photo) {
+            aboutEmailTutorLabel.text = myTutors.email
+            aboutDescriptionTutorLabel.text = myTutors.description
+            numDocTutorLabel.text = String(myTutors.phone_number)
+            likeTutorLabel.text = String(myTutors.likes)
+            if let urlPhoto = URL(string: myTutors.url_Image) {
                 aboutPictureImage.af_setImage(withURL: urlPhoto)
             }
             /*if let urlPremium = URL(string: NewApiTutor.baseUrl1 + myTutors.photo) {

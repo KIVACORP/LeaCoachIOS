@@ -16,8 +16,8 @@ class SearchCoachViewController: UIViewController, UITableViewDataSource, UITabl
     @IBOutlet weak var coachTable: UITableView!
     @IBOutlet weak var coachSearchBar: UISearchBar!
     
-    var results: [ResultX] = []
-    var currentResults: [ResultX] = []
+    var tutors: [Tutor] = []
+    var currentTutors: [Tutor] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class SearchCoachViewController: UIViewController, UITableViewDataSource, UITabl
     
     // set data
     func setUpResults() {
-        Alamofire.request(NewApiTutor.tutorUrl1).validate()
+        Alamofire.request(NewApiTutor.tutorsUrl).validate()
             .responseJSON(completionHandler: {
                 response in
                 switch response.result {
@@ -41,9 +41,9 @@ class SearchCoachViewController: UIViewController, UITableViewDataSource, UITabl
                         return
                     }
                     //print("\(json)")
-                    let jsonResults = json["results"].arrayValue
-                    self.results = ResultX.buildAll(jsonResults: jsonResults) // falta det
-                    self.currentResults = self.results
+                    let jsonResults = json["tutors"].arrayValue
+                    self.tutors = Tutor.buildAll(from: jsonResults)
+                    self.currentTutors = self.tutors
                     self.coachTable!.reloadData()
                 case .failure(let error):
                     print("Response Error: \(error.localizedDescription)")
@@ -55,7 +55,7 @@ class SearchCoachViewController: UIViewController, UITableViewDataSource, UITabl
     //Table, cuando agregamos UITableVieDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return currentResults.count
+        return currentTutors.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -65,11 +65,11 @@ class SearchCoachViewController: UIViewController, UITableViewDataSource, UITabl
                
         // to update table search
         //cambiar currentCoachArray por currentResults
-        cell.nameCoachLabel.text = currentResults[indexPath.row].name
-        cell.correoCoachLabel.text = currentResults[indexPath.row].link + "@gmail.com"
-        cell.especialityCoachLabel.text = currentResults[indexPath.row].tag_line
-        cell.itemsCoachLabel.text = String(currentResults[indexPath.row].review_rating)
-        if let url = URL(string: NewApiTutor.baseUrl1 + currentResults[indexPath.row].photo) {
+        cell.nameCoachLabel.text = currentTutors[indexPath.row].name
+        cell.correoCoachLabel.text = currentTutors[indexPath.row].email
+        cell.especialityCoachLabel.text = currentTutors[indexPath.row].description
+        cell.itemsCoachLabel.text = String(currentTutors[indexPath.row].likes)
+        if let url = URL(string: currentTutors[indexPath.row].url_Image) {
             cell.coachImage.af_setImage(withURL: url, placeholderImage: UIImage(named: "imagen_leacoach"))
         }
         return cell
@@ -88,11 +88,11 @@ class SearchCoachViewController: UIViewController, UITableViewDataSource, UITabl
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {        
         // to reload if not search and lower-uper case
         guard !searchText.isEmpty else {
-            currentResults = results
+            currentTutors = tutors
             coachTable.reloadData()
             return
         }
-        currentResults = results.filter({ coach -> Bool in
+        currentTutors = tutors.filter({ coach -> Bool in
             coach.name.lowercased().contains(searchText.lowercased())
             
         })
@@ -105,7 +105,7 @@ class SearchCoachViewController: UIViewController, UITableViewDataSource, UITabl
     
     //cancel search
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        currentResults = results
+        currentTutors = tutors
         searchBar.text = ""
         coachTable.reloadData()
     }
@@ -117,7 +117,7 @@ class SearchCoachViewController: UIViewController, UITableViewDataSource, UITabl
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowAboutTutor" {
             let aboutTutorViewController = (segue.destination as! UINavigationController).viewControllers.first as! AboutTutorViewController
-            aboutTutorViewController.myAboutTutor = currentResults[currentItemtutor]
+            aboutTutorViewController.myAboutTutor = currentTutors[currentItemtutor]
         }
         
     }
