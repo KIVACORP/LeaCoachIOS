@@ -41,6 +41,8 @@
 		DF16734021822ED700FA1D96 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF16731221822E7E00FA1D96 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DF16734321822EE200FA1D96 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1672F921822E7500FA1D96 /* Alamofire.framework */; };
 		DF16734421822EE200FA1D96 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DF1672F921822E7500FA1D96 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E3453EB521A54B27004362F9 /* LeaCoach.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3453EB321A54B27004362F9 /* LeaCoach.xcdatamodeld */; };
+		E3453ECD21A55143004362F9 /* LeaCoachStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3453ECC21A55143004362F9 /* LeaCoachStore.swift */; };
 		E3896A6021819A8900E22752 /* NewApiTutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3896A5F21819A8900E22752 /* NewApiTutor.swift */; };
 		E3896A6221819EA000E22752 /* Tutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3896A6121819EA000E22752 /* Tutor.swift */; };
 		E3DE3C8221A27F610011D41A /* ResultX.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3DE3C8121A27F610011D41A /* ResultX.swift */; };
@@ -300,6 +302,8 @@
 		DF1672ED21822E7400FA1D96 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		DF16730621822E7E00FA1D96 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 		DF16731F21822E8600FA1D96 /* AlamofireImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AlamofireImage.xcodeproj; path = AlamofireImage/AlamofireImage.xcodeproj; sourceTree = "<group>"; };
+		E3453EB421A54B27004362F9 /* LeaCoach.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LeaCoach.xcdatamodel; sourceTree = "<group>"; };
+		E3453ECC21A55143004362F9 /* LeaCoachStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaCoachStore.swift; sourceTree = "<group>"; };
 		E3896A5F21819A8900E22752 /* NewApiTutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewApiTutor.swift; sourceTree = "<group>"; };
 		E3896A6121819EA000E22752 /* Tutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutor.swift; sourceTree = "<group>"; };
 		E3DE3C8121A27F610011D41A /* ResultX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultX.swift; sourceTree = "<group>"; };
@@ -373,6 +377,7 @@
 				E3896A572181919900E22752 /* Model */,
 				E3896A562181919000E22752 /* Main */,
 				7F29D51E21701F200092530F /* Info.plist */,
+				E3453EB321A54B27004362F9 /* LeaCoach.xcdatamodeld */,
 			);
 			path = LeaCouch;
 			sourceTree = "<group>";
@@ -473,6 +478,7 @@
 				7FED3CCB219492DE00E19320 /* HomePrueba.swift */,
 				E3DE3C8121A27F610011D41A /* ResultX.swift */,
 				7F8D82BA21A4F3A900131587 /* Publicationx.swift */,
+				E3453ECC21A55143004362F9 /* LeaCoachStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -836,6 +842,7 @@
 				E3DE3C8221A27F610011D41A /* ResultX.swift in Sources */,
 				E3F270D221944C3A0041ED6C /* Course.swift in Sources */,
 				7F8D82AF21A4DE2400131587 /* MyTutorNotificationsViewController.swift in Sources */,
+				E3453EB521A54B27004362F9 /* LeaCoach.xcdatamodeld in Sources */,
 				7F29D51521701F1D0092530F /* ViewController.swift in Sources */,
 				E3F270DC219453280041ED6C /* HomeViewController.swift in Sources */,
 				7F29D543217050550092530F /* LoginPageViewController.swift in Sources */,
@@ -857,6 +864,7 @@
 				7F0BEB02219E4C2D001FE933 /* MasterSearchViewController.swift in Sources */,
 				7FFDB33F21A50BC2003B0284 /* FreePublicationTableViewCell.swift in Sources */,
 				7F29D54121703CA10092530F /* RegisterPageViewController.swift in Sources */,
+				E3453ECD21A55143004362F9 /* LeaCoachStore.swift in Sources */,
 				7F8D82BB21A4F3A900131587 /* Publicationx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1199,6 +1207,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E3453EB321A54B27004362F9 /* LeaCoach.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E3453EB421A54B27004362F9 /* LeaCoach.xcdatamodel */,
+			);
+			currentVersion = E3453EB421A54B27004362F9 /* LeaCoach.xcdatamodel */;
+			path = LeaCoach.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7F29D50721701F1D0092530F /* Project object */;
 }
