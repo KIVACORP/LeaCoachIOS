@@ -14,6 +14,7 @@ class User {
     var email: String
     var password: String
     var premium: Int
+    var url_Image: String
     
     init() {
         id = 0
@@ -21,6 +22,7 @@ class User {
         email = ""
         password = ""
         premium = 0
+        url_Image = ""
     }
     
     init(from jsonObject: JSON) {
@@ -29,6 +31,7 @@ class User {
         email = jsonObject["email"].stringValue
         password = jsonObject["password"].stringValue
         premium = jsonObject["premium"].intValue
+        url_Image = jsonObject["url_Image"].stringValue
     }
     
     static func buildAll(jsonUsers: [JSON]) -> [User] {
