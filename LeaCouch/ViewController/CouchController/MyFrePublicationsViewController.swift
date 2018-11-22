@@ -37,13 +37,16 @@ class MyFrePublicationsViewController: UIViewController, UITableViewDataSource, 
         
         // to update table search
         //cambiar currentCoachArray por currentResults
-        mcell.titleLabel.text = freePublicationArray[indexPath.row].name
-        mcell.viewsLabel.text = freePublicationArray[indexPath.row].views
-        mcell.adateLabel.text = freePublicationArray[indexPath.row].adate
-        mcell.descriptionsLabel.text = freePublicationArray[indexPath.row].adescription
-        if let url = URL(string: freePublicationArray[indexPath.row].urlPhoto) {
-            mcell.pictureImage.af_setImage(withURL: url, placeholderImage: UIImage(named: "imagen_leacoach"))
+        if freePublicationArray[indexPath.row].isFree == "1" {
+            mcell.titleLabel.text = freePublicationArray[indexPath.row].name
+            mcell.viewsLabel.text = freePublicationArray[indexPath.row].views
+            mcell.adateLabel.text = freePublicationArray[indexPath.row].adate
+            mcell.descriptionsLabel.text = freePublicationArray[indexPath.row].adescription
+            if let url = URL(string: freePublicationArray[indexPath.row].urlPhoto) {
+                mcell.pictureImage.af_setImage(withURL: url, placeholderImage: UIImage(named: "file-unavailable"))
+            }
         }
+        
         return mcell
     }
     

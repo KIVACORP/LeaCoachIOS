@@ -37,13 +37,16 @@ class MyPremiumPublicationsViewController: UIViewController, UITableViewDataSour
         
         // to update table search
         //cambiar currentCoachArray por currentResults
-        acell.premiumTitleLabel.text = premiumPublicationArray[indexPath.row].name
-        acell.premiumViewsLabel.text = premiumPublicationArray[indexPath.row].views
-        acell.premiumDateLabel.text = premiumPublicationArray[indexPath.row].adate
-        acell.premiumDescrptionLabel.text = premiumPublicationArray[indexPath.row].adescription
-        if let url = URL(string: premiumPublicationArray[indexPath.row].urlPhoto) {
-            acell.premiumPictureImage.af_setImage(withURL: url, placeholderImage: UIImage(named: "imagen_leacoach"))
+        if premiumPublicationArray[indexPath.row].isFree == "2" {
+            acell.premiumTitleLabel.text = premiumPublicationArray[indexPath.row].name
+            acell.premiumViewsLabel.text = premiumPublicationArray[indexPath.row].views
+            acell.premiumDateLabel.text = premiumPublicationArray[indexPath.row].adate
+            acell.premiumDescrptionLabel.text = premiumPublicationArray[indexPath.row].adescription
+            if let url = URL(string: premiumPublicationArray[indexPath.row].urlPhoto) {
+                acell.premiumPictureImage.af_setImage(withURL: url, placeholderImage: UIImage(named: "file-unavailable"))
+            }
         }
+       
         return acell
     }
     
