@@ -54,6 +54,7 @@
 		E3F270D821944C740041ED6C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F270D721944C740041ED6C /* User.swift */; };
 		E3F270DA21944C880041ED6C /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F270D921944C880041ED6C /* Type.swift */; };
 		E3F270DC219453280041ED6C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F270DB219453280041ED6C /* HomeViewController.swift */; };
+		E3FD899D21A6B63800FBA4FF /* PremiumPublicationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FD899C21A6B63800FBA4FF /* PremiumPublicationsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -315,6 +316,7 @@
 		E3F270D721944C740041ED6C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E3F270D921944C880041ED6C /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		E3F270DB219453280041ED6C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E3FD899C21A6B63800FBA4FF /* PremiumPublicationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumPublicationsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -409,6 +411,7 @@
 				7F8D82B621A4E5AD00131587 /* MyFrePublicationsViewController.swift */,
 				7F8D82B821A4E5D600131587 /* MyPremiumPublicationsViewController.swift */,
 				7FFDB33E21A50BC2003B0284 /* FreePublicationTableViewCell.swift */,
+				E3FD899C21A6B63800FBA4FF /* PremiumPublicationsTableViewCell.swift */,
 			);
 			path = CouchController;
 			sourceTree = "<group>";
@@ -847,6 +850,7 @@
 				E3F270DC219453280041ED6C /* HomeViewController.swift in Sources */,
 				7F29D543217050550092530F /* LoginPageViewController.swift in Sources */,
 				7F8D82B921A4E5D600131587 /* MyPremiumPublicationsViewController.swift in Sources */,
+				E3FD899D21A6B63800FBA4FF /* PremiumPublicationsTableViewCell.swift in Sources */,
 				E3F270D421944C4B0041ED6C /* Favorite.swift in Sources */,
 				E3F270D621944C650041ED6C /* Comment.swift in Sources */,
 				7F29D51321701F1D0092530F /* AppDelegate.swift in Sources */,
